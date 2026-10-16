@@ -1,12 +1,14 @@
 {
   "name": "patrickataide-tests-playwright",
   "version": "1.0.0",
-  "description": "Testes Playwright para patrickataide.com.br",
+  "description": "Testes Playwright + Cucumber/Gherkin para patrickataide.com.br",
   "scripts": {
     "test": "playwright test",
+    "test:bdd": "cucumber-js",
     "test:ui": "playwright test --ui"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^11.0.1",
     "@playwright/test": "^1.48.0"
   }
 }
